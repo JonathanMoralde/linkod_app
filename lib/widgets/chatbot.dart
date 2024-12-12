@@ -1419,6 +1419,7 @@ class _ChatBotState extends State<ChatBot> {
         'complainant': complainant,
         'uid': uid,
         'timestamp': FieldValue.serverTimestamp(),
+        'status': 'pending'
       });
 
       final result = await FirebaseFirestore.instance
